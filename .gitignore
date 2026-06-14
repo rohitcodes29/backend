@@ -34,4 +34,4 @@ build/
 
 # Ignore local Spring Boot configuration (keep production config in repo)
 # Local development config (contains local DB creds) should not be committed
-# /src/main/resources/application-dev.yaml
+ /src/main/resources/application-dev.yaml
