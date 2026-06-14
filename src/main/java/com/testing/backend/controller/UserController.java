@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173", "https://fedeploy.netlify.app/"}, maxAge = 3600)
 public class UserController {
     
     @Autowired
