@@ -1,0 +1,12 @@
+target
+.m2
+.git
+.gitignore
+README.md
+*.log
+*.tmp
+node_modules
+/.idea
+.vscode
+application.yaml
+application-dev.yaml
