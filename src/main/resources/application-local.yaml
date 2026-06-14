@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: backend
+
+  datasource:
+    # JDBC URL must NOT include user:password@host — set credentials separately
+    url: jdbc:postgresql://localhost:5432/dbtesting
+    # Use environment variables when possible. Fallback values are provided for local convenience.
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.disalect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+
+  # Jackson serialization features removed because the mapped
+  # SerializationFeature enum in the runtime does not include
+  # the configured key and causes startup binding errors.
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
